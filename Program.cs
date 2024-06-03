@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.WebSockets;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 
 Console.WriteLine("Welcome to the Calculator");
 repeat1:
@@ -39,18 +40,21 @@ if(check1 == 1)
         txt1 = txt1.ToLower();
         if(txt1 == "y")
         {
-            goto repeat2;
+            goto repeat1;
         }
 }
 else
 {
     repeat3:
-    Console.WriteLine("Welcome Simple Calculator\nEnter number and operators");
+    Console.WriteLine("Welcome Simple Calculator\nEnter number and operators\nFormat to =>\t [number and operators and number]");
     string input = Console.ReadLine();
-    string [] operators  = {"+","-","*","/"," "};
-    string [] something = input.Split(operators,StringSplitOptions.RemoveEmptyEntries);    
-    int firstNumber = Convert.ToInt32(something[0]);  
-    int secondNumber = Convert.ToInt32(something[1]);  
+    string pattern = @"^\s*(\d+)\s*([+\-*/])\s*(\d+)\s*$";
+    Regex regex = new Regex(pattern);
+    Match match = regex.Match(input);
+
+    if(match.Success){
+    double firstNumber = Convert.ToDouble(match.Groups[1].Value);
+    double secondNumber = Convert.ToDouble(match.Groups[3].Value);  
             
             foreach (var operationChar in input)
             {   
@@ -78,13 +82,17 @@ else
                     }
                 }                 
             }
-            
+    }  
+    else{
+        Console.WriteLine("Error: Input does not match the required format.");
+        goto repeat3;
+    }
         Console.WriteLine("Do you want to do it again?\n[y/n]");
         string txt1 = Console.ReadLine();
         txt1 = txt1.ToLower();
         if(txt1 == "y")
         {
-            goto repeat3;
+            goto repeat1;
         }
 
 
