@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.WebSockets;
 using System.Runtime.InteropServices;
 
@@ -42,7 +44,50 @@ if(check1 == 1)
 }
 else
 {
-    Console.WriteLine("Welcome Simple Calculator");
+    repeat3:
+    Console.WriteLine("Welcome Simple Calculator\nEnter number and operators");
+    string input = Console.ReadLine();
+    string [] operators  = {"+","-","*","/"," "};
+    string [] something = input.Split(operators,StringSplitOptions.RemoveEmptyEntries);    
+    int firstNumber = Convert.ToInt32(something[0]);  
+    int secondNumber = Convert.ToInt32(something[1]);  
+            
+            foreach (var operationChar in input)
+            {   
+                if (operationChar == '-')  
+                {  
+                    Console.WriteLine($"Result:{firstNumber} - {secondNumber} = {firstNumber - secondNumber}");  
+                }  
+                else if (operationChar == '+')  
+                {  
+                    Console.WriteLine($"Result:{firstNumber} + {secondNumber} = {firstNumber + secondNumber}");  
+                }  
+                else if (operationChar == '*')  
+                {  
+                    Console.WriteLine($"Result:{firstNumber} * {secondNumber} = {firstNumber * secondNumber}");  
+                }  
+                else if (operationChar == '/')  
+                {  
+                    if(secondNumber != 0)
+                    {
+                        Console.WriteLine($"Result:{firstNumber} / {secondNumber} = {firstNumber / secondNumber}");  
+                    }
+                    else
+                    {
+                        Console.WriteLine("Cannot be divided by ZERO!!!!");
+                    }
+                }                 
+            }
+            
+        Console.WriteLine("Do you want to do it again?\n[y/n]");
+        string txt1 = Console.ReadLine();
+        txt1 = txt1.ToLower();
+        if(txt1 == "y")
+        {
+            goto repeat3;
+        }
+
+
 }
 static void MethodByCircleArea()
 {
