@@ -1,0 +1,15 @@
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\bin\Debug\net9.0\BasicCalculator.exe
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\bin\Debug\net9.0\BasicCalculator.deps.json
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\bin\Debug\net9.0\BasicCalculator.runtimeconfig.json
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\bin\Debug\net9.0\BasicCalculator.dll
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\bin\Debug\net9.0\BasicCalculator.pdb
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.AssemblyInfoInputs.cache
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.AssemblyInfo.cs
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.csproj.CoreCompileInputs.cache
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.sourcelink.json
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.dll
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\refint\BasicCalculator.dll
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.pdb
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\BasicCalculator.genruntimeconfig.cache
+D:\Zip\Tarteeb8\Lessons\Lesson2\BasicCalculator\obj\Debug\net9.0\ref\BasicCalculator.dll
