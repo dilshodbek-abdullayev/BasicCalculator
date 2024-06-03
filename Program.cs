@@ -56,21 +56,21 @@ else
     double firstNumber = Convert.ToDouble(match.Groups[1].Value);
     double secondNumber = Convert.ToDouble(match.Groups[3].Value);  
             
-            foreach (var operationChar in input)
+            foreach (var operation in input)
             {   
-                if (operationChar == '-')  
+                if (operation == '-')  
                 {  
                     Console.WriteLine($"Result:{firstNumber} - {secondNumber} = {firstNumber - secondNumber}");  
                 }  
-                else if (operationChar == '+')  
+                else if (operation == '+')  
                 {  
                     Console.WriteLine($"Result:{firstNumber} + {secondNumber} = {firstNumber + secondNumber}");  
                 }  
-                else if (operationChar == '*')  
+                else if (operation == '*')  
                 {  
                     Console.WriteLine($"Result:{firstNumber} * {secondNumber} = {firstNumber * secondNumber}");  
                 }  
-                else if (operationChar == '/')  
+                else if (operation == '/')  
                 {  
                     if(secondNumber != 0)
                     {
