@@ -17,8 +17,6 @@ Qabul qilish shartlari:
  mumkin emas
 
 
-
-
 >
 1.Input
 ![input](image.png)
